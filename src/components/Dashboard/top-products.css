@@ -1,0 +1,85 @@
+.top-products {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.products-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.products-period {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.products-content {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.donut-chart {
+  flex-shrink: 0;
+}
+
+.products-list {
+  flex: 1;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.product-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product-name {
+  font-size: 14px;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.product-percentage {
+  font-size: 14px;
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+  .top-products {
+    padding: 16px;
+  }
+
+  .products-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .products-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
