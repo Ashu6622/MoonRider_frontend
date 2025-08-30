@@ -4,7 +4,7 @@ import axios from 'axios';
 const api = axios.create({
     baseURL : `${import.meta.env.VITE_API_URL}/api` || "http://localhost:4000/api"
 })
-console.log(import.meta.env.VITE_API_URL);
+
 
 export const addUserData = (data) =>{
     return api.post('/user/register', data);
